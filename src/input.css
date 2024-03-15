@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.taBtn {
+  @apply px-7 py-2 border-darkBlue border-opacity-25 cursor-pointer transition ease-linear duration-300 border-b-0  hover:bg-darkBlue hover:bg-opacity-5 border-t-2 font-semibold text-sm tracking-wider text-opacity-50;
+}
+
+.tabActive {
+  @apply border-2
+  border-b-0
+  border-l-2
+  border-opacity-0
+  bg-darkBlue
+  bg-opacity-50
+  text-seasalt
+  hover:bg-darkBlue 
+  hover:bg-opacity-50
+  shadow-2xl;
+}
+
+.generalInput {
+  @apply py-3 px-4 rounded-lg bg-seasalt border border-darkBlue border-opacity-25 text-right text-darkBlue text-opacity-50 transition ease-linear duration-150;
+  width: 300px;
+  font-size: 16px;
+}
+
+.conversionAnswer {
+  @apply text-bad border-dashed;
+}
+
+input[type=submit] {
+  width: 300px;
+  letter-spacing: 0.5px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  margin: 0;
+}
+
+input[type=base]::-webkit-outer-spin-button,
+input[name=base]::-webkit-inner-spin-button,
+input[type=dpi]::-webkit-outer-spin-button,
+input[name=dpi]::-webkit-inner-spin-button {
+  -webkit-appearance: button;
+  -moz-appearance: textfield;
+  margin: 0;
+}/*# sourceMappingURL=input.css.map */
