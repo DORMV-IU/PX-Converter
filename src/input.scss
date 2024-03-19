@@ -13,8 +13,12 @@
 //   border: 1px solid red;
 // }
 
+.formContainers {
+  width: 400px;
+}
+
 .taBtn {
-  @apply px-7 py-2 border-darkBlue border-opacity-25 cursor-pointer transition ease-linear duration-300 border-b-0  hover:bg-darkBlue hover:bg-opacity-5 border-t-2 font-semibold text-sm tracking-wider text-opacity-50;
+  @apply px-7 py-4 md:py-2 border-darkBlue border-opacity-25 cursor-pointer transition ease-linear duration-300 border-b-0  hover:bg-darkBlue hover:bg-opacity-5 border-t-2 font-semibold text-sm tracking-wider text-opacity-50;
 }
 
 .tabActive {
@@ -27,12 +31,11 @@
   text-seasalt
   hover:bg-darkBlue 
   hover:bg-opacity-50
-  shadow-2xl
-  ;
+  shadow-2xl;
 }
 
 .generalInput {
-  @apply py-3 px-4 rounded-lg bg-seasalt border border-darkBlue border-opacity-25 text-right text-darkBlue text-opacity-50 transition ease-linear duration-150;
+  @apply py-4 md:py-3 px-4 rounded-lg bg-seasalt border border-darkBlue border-opacity-25 text-right text-darkBlue text-opacity-50 transition ease-linear duration-150;
   width: 300px;
   font-size: 16px;
 }
@@ -60,4 +63,14 @@ input[name="dpi"]::-webkit-inner-spin-button {
   -webkit-appearance: button;
   -moz-appearance: textfield;
   margin: 0;
+}
+
+.submitBtn {
+  @apply outline-none px-4 py-5 md:p-4 rounded-lg bg-darkBlue bg-opacity-100 hover:bg-opacity-90 shadow-sm hover:shadow-xl transition ease-linear duration-300 cursor-pointer text-seasalt font-semibold;
+}
+
+@media only screen and (max-width: 600px) {
+  .formContainers {
+    width: 375px;
+  }
 }
